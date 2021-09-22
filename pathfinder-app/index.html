@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pathfinder App</title>
+    <link rel="stylesheet" type="text/css" href="src/Styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<section class="hero is-primary">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <div class ="has-text-weight-bold">
+                    <div class ="has-text-white">
+                    Pathfinder App
+                    </div>
+                </div>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <div class ="has-text-dark">
+                        Algorithms
+                        </div>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <div id="astar" class ="has-text-black">
+                            A*
+                            </div>
+                        </a>
+                        <a class="navbar-item">
+                            <div id="dijk" class ="has-text-black">
+                            Dijkstra
+                            </div>
+                        </a>
+                        <a class="navbar-item">
+                            <div id="bfs" class ="has-text-black">
+                            Breadth-First Search (BFS)
+                            </div>
+                        </a>
+                        <a class="navbar-item">
+                            <div id="dfs" class ="has-text-black">
+                            Depth-First Search (DFS)
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <div class ="has-text-dark">
+                        Speed
+                        </div>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            <div class ="has-text-black">
+                                Fast
+                            </div>
+                        </a>
+                        <a class="navbar-item">
+                            <div class ="has-text-black">
+                                Normal
+                            </div>
+                        </a>
+                        <a class="navbar-item">
+                            <div class ="has-text-black">
+                                Slow
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a id="start" class="button is-success">
+                            <strong>Start</strong>
+                        </a>
+                        <a id="reset" class="button is-warning">
+                            <strong>Reset</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+<section class="section">
+    <div id="outer">
+        <div id="grid">
+        </div>
+    </div>
+</section>
+</body>
+<script type="text/javascript" src="src/main.js"></script>
+</html>

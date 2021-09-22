@@ -1,0 +1,39 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#outer {
+    width: 100%;
+    text-align: center;
+}
+
+#grid{
+    display: inline-grid;
+    grid-template-rows: repeat(var(--grid-rows), 25px);
+    grid-template-columns: repeat(var(--grid-cols), 25px);
+}
+
+.node {
+    border:1px solid lightsteelblue;
+}
+
+.node.start {
+    background-color: springgreen;
+}
+
+.node.end {
+    background-color: red;
+}
+
+.node.wall {
+    background-color: gray;
+}
+
+.node.path {
+    background-color: gold;
+}
+
+.node.search {
+    background-color: lightskyblue;
+}
